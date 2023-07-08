@@ -2,7 +2,7 @@
 :root {
 	/* App Colors */
 	--color-primary: var(--color-black);
-	--color-primary-variant: var(--colot-gray);
+	--color-primary-variant: var(--color-gray);
 	--color-accent: var(--color-blue);
 	--color-accent-variant: var(--color-orange);
 	--color-text: var(--color-white);
@@ -12,7 +12,10 @@
 	--color-black: #07170b;
 	--color-blue: #ffea00;
 	--color-orange: #fd6413;
-	--color-gray: #1b1e26;
+	--color-gray: #1b261c;
+
+	/* Size */
+	--size-max-width: 1200px;
 }
 
 * {
@@ -56,6 +59,11 @@ button:focus {
 .section {
 	padding: 4rem;
 	text-align: center;
+}
+
+.max-container {
+	max-width: var(--size-max-width);
+	margin: auto;
 }
 
 .title {
@@ -157,4 +165,67 @@ button:focus {
 	background-color: transparent;
 	color: var(--color-text);
 	outline: 2px solid var(--color-accent);
+}
+
+/* About */
+.majors {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 2.5rem;
+}
+
+.major {
+	background-color: var(--color-primary-variant);
+	padding: 2rem 1rem;
+	color: var(--color-text);
+	border-radius: 1rem;
+	cursor: default;
+	box-shadow: 8px 8px 8px rgba(61, 59, 5, 0.538);
+}
+
+.major__icon {
+	font-size: 4rem;
+	margin: 1rem 0;
+	color: var(--color-accent);
+	transition: all 300ms ease;
+}
+
+.major__title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.major:hover .major__icon {
+	transform: rotate(-15deg) scale(1.2);
+}
+
+.jobs {
+	text-align: start;
+	margin-top: 4rem;
+}
+
+.job {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 1rem;
+	margin-left: 2.5rem;
+}
+
+.job__name {
+	color: var(--color-primary);
+	font-weight: bold;
+}
+
+.job__period {
+	color: var(--color-primary);
+	font-size: 0.9rem;
+}
+
+.job__logo {
+	width: 150px;
+	height: 50px;
+	object-fit: contain;
 }
