@@ -461,6 +461,7 @@ button:focus {
 	text-align: center;
 	box-shadow: 3px 3px 0px 0px var(--color-accent);
 	filter: brightness(80%);
+	transition: opacity 300ms ease-in;
 }
 
 /* Footer */
