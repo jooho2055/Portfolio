@@ -1,3 +1,4 @@
+'use strict';
 // To make the color change of header when user scrolls down
 
 const header = document.querySelector('.header');
