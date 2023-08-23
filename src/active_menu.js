@@ -22,7 +22,7 @@ function observerCallback(entries) {
 		const index = sectionIds.indexOf(`#${entry.target.id}`);
 		visibleSections[index] = entry.isIntersecting;
 
-		console.log(entry.intersectionRatio);
+		// console.log(entry.intersectionRatio);
 
 		// for contact section
 		selectLastOne =
@@ -31,7 +31,7 @@ function observerCallback(entries) {
 
 	const navIndex = selectLastOne ? sectionIds.length - 1 : findFirstIntersecting(visibleSections);
 
-	console.log(sectionIds[navIndex]);
+	// console.log(sectionIds[navIndex]);
 	const navItem = navItems[navIndex];
 	activeNavItem.classList.remove('active');
 	activeNavItem = navItem;
