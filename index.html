@@ -28,6 +28,9 @@
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/7f7182874c.js" crossorigin="anonymous"></script>
 
+		<!-- Typeit -->
+		<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 
@@ -35,6 +38,7 @@
 		<script type="module" src="src/main.js" defer></script>
 		<script type="module" src="src/projects.js" defer></script>
 		<script type="module" src="src/active_menu.js" defer></script>
+		<script type="module" src="src/type.js" defer></script>
 	</head>
 	<body>
 		<!-- Header -->
@@ -64,12 +68,12 @@
 			<section id="home">
 				<div class="home__container">
 					<img class="home__avatar" src="images/Profile_bgRemoved.ico" alt="Jooho's profile" />
-					<h2 class="home__title">
+					<h2 class="home__title" aria-label="Hello, I'm Dream Coder, Jooho">
 						Hello <br />I&#39;m <strong class="home__title--strong">Dream Coder</strong>,
 						Jooho
 					</h2>
 					<p class="home__description">
-						A future software engineer currently residing in San Francisco, California
+						A future full-stack developer currently residing in San Francisco, California
 					</p>
 					<a class="home__contact" href="#contact">Contact Me</a>
 				</div>

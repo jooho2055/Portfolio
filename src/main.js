@@ -43,7 +43,7 @@ navbarToggle.addEventListener('click', () => {
 	navbarMenu.classList.toggle('open');
 });
 
-// Nav-bar automatically colse one user click one of the menus
+// Nav-bar automatically close one user click one of the menus
 
 navbarMenu.addEventListener('click', () => {
 	navbarMenu.classList.remove('open');
