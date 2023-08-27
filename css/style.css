@@ -233,7 +233,7 @@ button:focus {
 /* About */
 .majors {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 1rem;
 	margin: 2.5rem;
 }
