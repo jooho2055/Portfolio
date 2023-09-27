@@ -546,8 +546,8 @@ button:focus {
 #contact {
 	position: relative;
 	background-color: var(--color-primary);
-	background: var(--primary-bg-gradient);
-	color: var(--color-text);
+	background: var(--color-white);
+	color: var(--color-primary);
 }
 
 #contact::after {
@@ -560,7 +560,7 @@ button:focus {
 	margin-bottom: -1px;
 	overflow: hidden;
 	line-height: 0;
-	background-color: var(--color-white);
+	background-color: var(--color-primary);
 	mask: var(--divider-arrow);
 	-webkit-mask: var(--divider-arrow);
 }
@@ -574,6 +574,7 @@ button:focus {
 }
 
 .contact__link {
+	color: var(--color-primary);
 	transition: color 250ms ease-in;
 }
 
