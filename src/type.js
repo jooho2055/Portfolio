@@ -6,7 +6,7 @@ new TypeIt('.home__title--strong', { loop: true, speed: 80 }) //Dream Coder|
 	.pause(1000)
 	.move(null, { to: 'END' }) // Amazing Dream Coder|
 	.delete() // |
-	.type('Front-end Developer')
+	.type('Front-end Engineer')
 	.pause(1000) // a Front-end Developer
 	.move(-21)
 	.type('a remarkable ')
